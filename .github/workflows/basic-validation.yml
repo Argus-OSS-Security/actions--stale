@@ -1,16 +1,17 @@
 name: Basic validation
 
-on:
-  pull_request:
-    paths-ignore:
-      - '**.md'
-  push:
-    branches:
-      - main
-      - releases/*
-    paths-ignore:
-      - '**.md'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths-ignore:
+#       - '**.md'
+#   push:
+#     branches:
+#       - main
+#       - releases/*
+#     paths-ignore:
+#       - '**.md'
+# 
 jobs:
   call-basic-validation:
     name: Basic validation

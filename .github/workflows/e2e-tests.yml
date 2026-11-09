@@ -1,16 +1,17 @@
 name: e2e tests
 
-on:
-  pull_request:
-    paths-ignore:
-      - '**.md'
-  push:
-    branches:
-      - main
-      - releases/*
-    paths-ignore:
-      - '**.md'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths-ignore:
+#       - '**.md'
+#   push:
+#     branches:
+#       - main
+#       - releases/*
+#     paths-ignore:
+#       - '**.md'
+# 
 jobs:
   dry-run-test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
